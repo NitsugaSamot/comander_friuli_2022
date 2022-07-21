@@ -1,0 +1,563 @@
+{
+  "pastas": [
+    {
+      "id": 1,
+      "nombre": "Tallarin de Huevo",
+      "precio": 700,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 2,
+      "nombre": "Tallarin de Espinaca",
+      "precio": 700,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 3,
+      "nombre": "Ñoquis de Papa",
+      "precio": 700,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 4,
+      "nombre": "Ñoquis de Espinaca",
+      "precio": 700,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 5,
+      "nombre": "Sorrentino de Jamon y Queso",
+      "precio": 900,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 6,
+      "nombre": "Ravioles de Ternera",
+      "precio": 850,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 7,
+      "nombre": "Ravioles de Pescado",
+      "precio": 850,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 8,
+      "nombre": "Ravioles de Ricota y Spinaca",
+      "precio": 850,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 9,
+      "nombre": "Lasagna",
+      "precio": 900,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 10,
+      "nombre": "Sorrentinos de Osobuco",
+      "precio": 950,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 11,
+      "nombre": "Sorrentinos de Cerdo",
+      "precio": 950,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 12,
+      "nombre": "Sorrentino Vegetariano",
+      "precio": 800,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 13,
+      "nombre": "Malfattis",
+      "precio": 950,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 14,
+      "nombre": "Canelon de Pollo",
+      "precio": 800,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 15,
+      "nombre": "Canelon de Choclo",
+      "precio": 800,
+      "categoria": "Pastas"
+    },
+    {
+      "id": 16,
+      "nombre": "Canelon de Verdura",
+      "precio": 800,
+      "categoria": "Pastas"
+    }
+
+  ],
+  "Salsas": [
+    {
+      "id": 17,
+      "nombre": "Fileto",
+      "precio": 300,
+      "categoria": "Salsas"
+    },
+    {
+      "id": 18,
+      "nombre": "Bolognesa",
+      "precio": 300,
+      "categoria": "Salsas"
+    },
+    {
+      "id": 19,
+      "nombre": "Crema",
+      "precio": 300,
+      "categoria": "Salsas"
+    },
+    {
+      "id": 20,
+      "nombre": "4 Quesos",
+      "precio": 300,
+      "categoria": "Salsas"
+    },
+    {
+      "id": 21,
+      "nombre": "Hongos",
+      "precio": 300,
+      "categoria": "Salsas"
+    },
+    {
+      "id": 22,
+      "nombre": "Amarticiana",
+      "precio": 300,
+      "categoria": "Salsas"
+    },
+    {
+      "id": 23,
+      "nombre": "Mariscos",
+      "precio": 500,
+      "categoria":"Salsas" 
+    },
+    {
+      "id": 24,
+      "nombre": "Adicional Peceto",
+      "precio": 500,
+      "categoria":"Salsas" 
+    }
+  ],
+  "menuInfantil": [
+      {
+          "id": 25,
+          "nombre": "Patitas de Pollo con fritas",
+          "precio": 900,
+          "categoria": 4
+      },
+      {
+          "id": 26,
+          "nombre": "trisngulos de Pollo con fritas",
+          "precio": 800,
+          "categoria": 4
+      }
+  ],
+  "tablas" : [
+    {
+      "id": 27,
+      "nombre": "Tabla de Fiambres",
+      "precio": 2500,
+      "categoria": "tablas"
+    },    
+    {
+      "id": 28,
+      "nombre": "Tabla de Mar",
+      "precio": 3000,
+      "categoria": "tablas"  
+    },
+    {
+      "id": 29,
+      "nombre": "Tabla de Appetizer",
+      "precio": 2000,
+      "categoria": "tablas" 
+    }
+  ],
+  "carnesPollosPescados": [
+    {
+      "id": 30,
+      "nombre": "Costeleta Con Guarnicion",
+      "precio": 1000,
+      "categoria": "carnesPollosPescados" 
+    },
+    {
+      "id": 31,
+      "nombre": "Bife de Pollo con Guarnicion",
+      "precio": 900,
+      "categoria": "carnesPollosPescados"  
+    },
+    {
+      "id": 32,
+      "nombre": "Pollo a la Pizza",
+      "precio": 1000,
+      "categoria":"carnesPollosPescados"   
+    },
+    {
+      "id": 33,
+      "nombre": "Lomo a la Friulana",
+      "precio": 1300,
+      "categoria": "carnesPollosPescados"  
+    },
+    {
+      "id": 34,
+      "nombre": "Costeleta a la Riojana",
+      "precio": 1100,
+      "categoria": "carnesPollosPescados"  
+    },
+    {
+      "id": 35,
+      "nombre": "Trucha Rellena",
+      "precio": 2500,
+      "categoria": "carnesPollosPescados"  
+    }
+  ],
+  "pizzas": [
+    {
+      "id": 36,
+      "nombre": "Muzzarella",
+      "precio": 800,
+      "categoria": "pizzas" 
+    },
+    {
+      "id": 37,
+      "nombre": "Especial",
+      "precio": 900,
+      "categoria": "pizzas" 
+    },
+    {
+      "id": 38,
+      "nombre": "Del Bosque",
+      "precio": 1000,
+      "categoria": "pizzas" 
+    },
+    {
+      "id": 39,
+      "nombre": "Napolitana",
+      "precio": 900,
+      "categoria": "pizzas" 
+    },
+    {
+      "id": 40,
+      "nombre": "Fugazzeta",
+      "precio": 900,
+      "categoria": "pizzas" 
+    },
+    {
+      "id": 41,
+      "nombre": "Palmito y Salsa Golf",
+      "precio": 1000,
+      "categoria": "pizzas" 
+    },
+    {
+      "id": 42,
+      "nombre": "Salteado de Pollo",
+      "precio": 1000,
+      "categoria": "pizzas" 
+    },
+    {
+      "id": 43,
+      "nombre": "Salame Caroyence",
+      "precio": 1000,
+      "categoria": "pizzas" 
+    },
+    {
+      "id": 44,
+      "nombre": "Roquefort y Nueces",
+      "precio": 1000,
+      "categoria": "pizzas" 
+    },
+    {
+      "id": 45,
+      "nombre": "Especial con Anchoas",
+      "precio": 1000,
+      "categoria": "pizzas" 
+    }
+  ],
+  "alPlatoConGuarnicion": [
+    {
+      "id": 46,
+      "nombre": "Milanesa",
+      "precio": 900,
+      "categoria": "alPlatoConGuarnicion" 
+    },
+    {
+      "id": 47,
+      "nombre": "Milanesa Napolitana",
+      "precio": 1000,
+      "categoria": "alPlatoConGuarnicion" 
+    },
+    {
+      "id": 48,
+      "nombre": "Suprema",
+      "precio": 900,
+      "categoria": "alPlatoConGuarnicion" 
+    },
+    {
+      "id": 49,
+      "nombre": "Suprema Napolitana",
+      "precio": 1000,
+      "categoria": "alPlatoConGuarnicion" 
+    }          
+  ],
+  "sandwiches": [
+    {
+      "id": 50,
+      "nombre": "Ciabatta De Pollo",
+      "precio": 800,
+      "categoria": "sandwiches" 
+    },
+    {
+      "id": 51,
+      "nombre": "Lomo Completo",
+      "precio": 1000,
+      "categoria": "sandwiches" 
+    },
+    {
+      "id": 52,
+      "nombre": "Hamburguesa Friuli",
+      "precio": 900,
+      "categoria": "sandwiches" 
+    },
+    {
+      "id": 53,
+      "nombre": "Vegetariano",
+      "precio": 800,
+      "categoria": "sandwiches" 
+    }
+  ],
+  "ensaladas":[
+    {
+      "id": 54,
+      "nombre": "Ensalada Cesar",
+      "precio": 800,
+      "categoria": "ensaladas"  
+    },
+    {
+      "id": 55,
+      "nombre": "Ensalada de Mar",
+      "precio": 1000,
+      "categoria": "ensaladas"  
+    },
+    {
+      "id": 56,
+      "nombre": "Arma tu Ensalada",
+      "precio": 800,
+      "categoria": "ensaladas"  
+    }
+  ],
+  "paraCompartir": [
+    {
+      "id": 57,
+      "nombre": "Empanadas Criolla salada",
+      "precio": 150,
+      "categoria": "paraCompartir" 
+    },
+    {
+      "id": 58,
+      "nombre": "Empanadas Criolla dulce",
+      "precio": 150,
+      "categoria": "paraCompartir" 
+    },
+    {
+      "id": 59,
+      "nombre": "Empanadas Arabe",
+      "precio": 150,
+      "categoria": "paraCompartir" 
+    },
+    {
+      "id": 60,
+      "nombre": "Empanadas de Jamon y Queso",
+      "precio": 150,
+      "categoria": "paraCompartir" 
+    },
+    {
+      "id": 61,
+      "nombre": "Frico",
+      "precio": 800,
+      "categoria": "paraCompartir" 
+    },
+    {
+      "id": 62,
+      "nombre": "Rognosa",
+      "precio": 900,
+      "categoria": "paraCompartir" 
+    },
+    {
+      "id": 63,
+      "nombre": "Lidric con Chinchin",
+      "precio": 700,
+      "categoria": "paraCompartir" 
+    }
+  ],
+  "entradas" : [
+    {
+      "id": 64,
+      "nombre": "Papas con Cheddar",
+      "precio": 600,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 65,
+      "nombre": "Papas Gratinadas",
+      "precio": 600,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 66,
+      "nombre": "Porcion de Papas Fritas",
+      "precio": 500,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 67,
+      "nombre": "Papas Fritas con Huevo",
+      "precio": 600,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 68,
+      "nombre": "Cubos Crocantes con Queso",
+      "precio": 700,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 69,
+      "nombre": "Rabas",
+      "precio": 1200,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 70,
+      "nombre": "Aros de Cebolla",
+      "precio": 600,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 71,
+      "nombre": "Cazuela de Pejerrey",
+      "precio": 1100,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 72,
+      "nombre": "Cazuela de Langostinos",
+      "precio": 1300,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 73,
+      "nombre": "Cazuela de Cornalitos",
+      "precio": 1100,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 74,
+      "nombre": "Triangulos de Pescados",
+      "precio": 800,
+      "categoria": "entradas" 
+    },
+    {
+      "id": 75,
+      "nombre": "Tomates Empanizados",
+      "precio": 800,
+      "categoria": "entradas" 
+    }
+  ],
+  "postres":[
+    {
+      "id": 76,
+      "nombre": "Flan",
+      "precio": 300,
+      "categoria": "postres" 
+    },
+    {
+      "id": 77,
+      "nombre": "Flan Mixto",
+      "precio": 300,
+      "categoria": "postres" 
+    },
+    {
+      "id": 78,
+      "nombre": "Panacota de Fruta",
+      "precio": 500,
+      "categoria": "postres" 
+    },
+    {
+      "id": 79,
+      "nombre": "Brownie con helado",
+      "precio": 500,
+      "categoria": "postres" 
+    },
+    {
+      "id": 80,
+      "nombre": "Copa Helada",
+      "precio": 500,
+      "categoria": "postres" 
+    },
+    {
+      "id": 81,
+      "nombre": "Tiramisú",
+      "precio": 500,
+      "categoria": "postres" 
+    },
+    {
+      "id": 82,
+      "nombre": "Dulce con Queso",
+      "precio": 400,
+      "categoria": "postres" 
+    },
+    {
+      "id": 83,
+      "nombre": "Copa de Frutas",
+      "precio": 400,
+      "categoria": "postres" 
+    },
+    {
+      "id": 84,
+      "nombre": "Helado Suizo",
+      "precio": 300,
+      "categoria": "postres" 
+    },
+    {
+      "id": 85,
+      "nombre": "Helados Almendrado",
+      "precio": 300,
+      "categoria": "postres" 
+    },
+    {
+      "id": 86,
+      "nombre": "Helados Escoces",
+      "precio": 300,
+      "categoria": "postres" 
+    },
+    {
+      "id": 87,
+      "nombre": "Copa Caribeña",
+      "precio": 600,
+      "categoria": "postres" 
+    },
+    {
+      "id": 88,
+      "nombre": "Cookie Monster",
+      "precio": 600,
+      "categoria": "postres" 
+    },
+    {
+      "id": 89,
+      "nombre": "Copa Banana Split",
+      "precio": 600,
+      "categoria": "postres" 
+    }
+  ]
+
+}
+

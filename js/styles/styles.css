@@ -1,0 +1,71 @@
+html {
+    /* font-size: 62.5%; */
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.671);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.btn{
+    display: none;
+}
+
+.btnEliminar{
+    display: none;
+}
+
+.btnCalcular{
+    display: none;
+}
+
+ .total-pagar{
+     color: rgb(102, 62, 52);
+ }
+
+ .resumen{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-origin: padding-box;
+}
+
+.grupo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center ;
+    gap: 1rem;
+}
+
+.infoMesa {
+    justify-content: space-between;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+}
+
+#imprimirResumen{
+    display: none;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    margin-left: 13rem;
+    margin-top: 2rem;
+    border-radius: 5%;
+}
+
+.totalFinal{
+    margin-top: 1rem;
+}
+
+h2{
+    text-align: center;
+}

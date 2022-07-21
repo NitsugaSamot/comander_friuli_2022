@@ -1,0 +1,116 @@
+{
+    "pastas": [
+      {
+        "id": 1,
+        "nombre": "Tallarin de Huevo",
+        "precio": 600,
+        "categoria": 1
+      },
+      {
+        "id": 2,
+        "nombre": "Tallarin de Espinaca",
+        "precio": 600,
+        "categoria": 1
+      },
+      {
+        "id": 3,
+        "nombre": "Ñoquis de Papa",
+        "precio": 600,
+        "categoria": 3
+      },
+      {
+        "id": 4,
+        "nombre": "Ñoquis de Espinaca",
+        "precio": 600,
+        "categoria": 3
+      },
+      {
+        "id": 5,
+        "nombre": "Sorrentino de Jamon y Queso",
+        "precio": 750,
+        "categoria": 2
+      },
+      {
+        "id": 6,
+        "nombre": "Ravioles de Ternera",
+        "precio": 700,
+        "categoria": 1
+      },
+      {
+        "id": 7,
+        "nombre": "Ravioles de Pescado",
+        "precio": 700,
+        "categoria": 1
+      },
+      {
+        "id": 8,
+        "nombre": "Ravioles de Ricota y Spinaca",
+        "precio": 700,
+        "categoria": 2
+      },
+      {
+        "id": 9,
+        "nombre": "Lasagna",
+        "precio": 750,
+        "categoria": 2
+      },
+      {
+        "id": 10,
+        "nombre": "Sorrentinos de Osobuco",
+        "precio": 800,
+        "categoria": 3
+      },
+      {
+        "id": 11,
+        "nombre": "Sorrentinos de Cerdo",
+        "precio": 800,
+        "categoria": 2
+      },
+      {
+        "id": 12,
+        "nombre": "Sorrentino Vegetariano",
+        "precio": 700,
+        "categoria": 2
+      },
+      {
+        "id": 12,
+        "nombre": "Malfattis",
+        "precio": 800,
+        "categoria": 2
+      },
+      {
+        "id": 12,
+        "nombre": "Canelon de Pollo",
+        "precio": 650,
+        "categoria": 2
+      },
+      {
+        "id": 12,
+        "nombre": "Canelon de Choclo",
+        "precio": 650,
+        "categoria": 2
+      },
+      {
+        "id": 12,
+        "nombre": "Canelon de Verdura",
+        "precio": 650,
+        "categoria": 2
+      }
+
+    ],
+    "menuInfantil": [
+        {
+            "id": 1,
+            "nombre": "Patitas de Pollo con fritas",
+            "precio": 700,
+            "categoria": 4
+        },
+        {
+            "id": 2,
+            "nombre": "trisngulos de Pollo con fritas",
+            "precio": 700,
+            "categoria": 4
+        }
+    ]
+
+  }
