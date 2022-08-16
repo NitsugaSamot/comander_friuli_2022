@@ -557,7 +557,316 @@
       "precio": 600,
       "categoria": "postres" 
     }
+  ],
+  "vinosMalbec": [
+    {
+      "id": 90,
+      "nombre": "Luigi Bosca",
+      "precio": 4000,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 91,
+      "nombre": "Trumpeter",
+      "precio": 3500,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 92,
+      "nombre": "Privado Etiqueta",
+      "precio": 3200,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 93,
+      "nombre": "Rutini",
+      "precio": 6000,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 94,
+      "nombre": "Don Valentin 3/8",
+      "precio": 900,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 95,
+      "nombre": "Dada 2",
+      "precio": 1800,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 96,
+      "nombre": "Alma Mora",
+      "precio": 1800,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 97,
+      "nombre": "Latitud",
+      "precio": 2000,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 98,
+      "nombre": "Santa Julia",
+      "precio": 2000,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 99,
+      "nombre": "Finca Gabriel Roble",
+      "precio": 1900,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 100,
+      "nombre": "Finca Gabriel Reserva",
+      "precio": 3300,
+      "categoria": "vinos Malbec"
+    },
+    {
+      "id": 101,
+      "nombre": "vinos 3/8",
+      "precio": 900,
+      "categoria": "vinos Malbec"
+    }
+  ],
+  "vinosBlancos": [
+    {
+      "id": 102,
+      "nombre": "Innovazione",
+      "precio": 1100,
+      "categoria": "vinos blancos"
+    },
+    {
+      "id": 103,
+      "nombre": "Finca Gabriel",
+      "precio": 2800,
+      "categoria": "vinos blancos"
+    },
+    {
+      "id": 104,
+      "nombre": "Santa Julia Dulce",
+      "precio": 2100,
+      "categoria": "vinos blancos"
+    },
+    {
+      "id": 105,
+      "nombre": "New Age",
+      "precio": 1100,
+      "categoria": "vinos blancos"
+    }
+  ],
+  "vinosCaroyences": [
+    {
+      "id": 106,
+      "nombre": "Caroya",
+      "precio": 1000,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 107,
+      "nombre": "Paso Viejo",
+      "precio": 1100,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 108,
+      "nombre": "Amabile",
+      "precio": 1100,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 109,
+      "nombre": "Frambua",
+      "precio": 1100,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 110,
+      "nombre": "Zambua dulce-seco",
+      "precio": 1200,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 111,
+      "nombre": "Navira Malbec",
+      "precio": 1200,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 112,
+      "nombre": "Indama Chardonay",
+      "precio": 2100,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 113,
+      "nombre": "Socavones Reserva",
+      "precio": 2800,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 114,
+      "nombre": "Ovum Reserva",
+      "precio": 3800,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 115,
+      "nombre": "Navira Blend",
+      "precio": 1300,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 116,
+      "nombre": "Innovazione",
+      "precio": 1100,
+      "categoria": "vinos caroyences"
+    },
+    {
+      "id": 117,
+      "nombre": "Copa Vino de la Casa",
+      "precio": 500,
+      "categoria": "vinos caroyences"
+    }
+  ],
+  "vinosRosados": [
+    {
+      "id": 118,
+      "nombre": "La Linda",
+      "precio": 2500,
+      "categoria": "vinos rosados"
+    },
+    {
+      "id": 119,
+      "nombre": "Indama",
+      "precio": 2500,
+      "categoria": "vinos rosados"
+    },
+    {
+      "id": 120,
+      "nombre": "Finca Gabriel",
+      "precio": 2800,
+      "categoria": "vinos rosados"
+    },
+    {
+      "id": 121,
+      "nombre": "Emilia",
+      "precio": 2500,
+      "categoria": "vinos rosados"
+    }
+  ],
+  "cervezas": [
+    {
+      "id": 122,
+      "nombre": "Stella Rubia - Negra",
+      "precio": 800,
+      "categoria": "cervezas"
+    },
+    {
+      "id": 123,
+      "nombre": "Andres Rubia-Negra",
+      "precio": 700,
+      "categoria": "cervezas"
+    },
+    {
+      "id": 124,
+      "nombre": "Quilmes Rubia",
+      "precio": 600,
+      "categoria": "cervezas"
+    },
+    {
+      "id": 125,
+      "nombre": "Quilmes Negra",
+      "precio": 650,
+      "categoria": "cervezas"
+    },
+    {
+      "id": 126,
+      "nombre": "Brahama",
+      "precio": 600,
+      "categoria": "cervezas"
+    },
+    {
+      "id": 127,
+      "nombre": "Pinta",
+      "precio": 350,
+      "categoria": "cervezas"
+    }
+  ],
+  "sinAlcohol": [
+      
+    {
+      "id": 128,
+      "nombre": "Coca Cola 600 ML",
+      "precio": 300,
+      "categoria": "bebidas sin alcohol"
+    },
+    {
+      "id": 129,
+      "nombre": "Coca Cola 1.25 LTS",
+      "precio": 450,
+      "categoria": "bebidas sin alcohol"
+    },
+    {
+      "id": 130,
+      "nombre": "Agua 2 LTS",
+      "precio": 300,
+      "categoria": "bebidas sin alcohol"
+    },
+    {
+      "id": 131,
+      "nombre": "Agua 500ML",
+      "precio": 200,
+      "categoria": "bebidas sin alcohol"
+    },
+    {
+      "id": 132,
+      "nombre": "Soda Chica",
+      "precio": 200,
+      "categoria": "bebidas sin alcohol"
+    },
+    {
+      "id": 133,
+      "nombre": "Soda Grande",
+      "precio": 250,
+      "categoria": "bebidas sin alcohol"
+    },
+    {
+      "id": 134,
+      "nombre": "Agua Saborizada 500 ML",
+      "precio": 220,
+      "categoria": "bebidas sin alcohol"
+    },
+    {
+      "id": 135,
+      "nombre": "Agua Saborizada 1,5 LTS",
+      "precio": 300,
+      "categoria": "bebidas sin alcohol"
+    },
+    {
+      "id": 136,
+      "nombre": "Terma",
+      "precio": 250,
+      "categoria": "bebidas sin alcohol"
+    }
+  ],
+  "cafeteria": [
+    {
+      "id": 137,
+      "nombre": "Café Chico - Té",
+      "precio": 180,
+      "categoria": "cafeteria"
+    },
+    {
+      "id": 138,
+      "nombre": "Café Doble",
+      "precio": 200,
+      "categoria": "cafeteria"
+    }
   ]
-
 }
+
 

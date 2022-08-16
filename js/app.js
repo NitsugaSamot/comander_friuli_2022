@@ -28,7 +28,7 @@ function guardarCliente() {
     if(camposVacios) {
     
         //Verificar si hay una alerta 
-            const existeAlerta = document.querySelector('.invalid-feedback')
+        const existeAlerta = document.querySelector('.invalid-feedback')
         
         if(!existeAlerta) {        
             const alerta = document.createElement('DIV')
@@ -83,6 +83,21 @@ function guardarCliente() {
     obtenerAlPlato()
 
     obtenerPostres()
+
+    obtenerSinAlchol()
+
+    obtenerVinosMalbec()
+
+    obtenerVinosCaroyences()
+
+    obtenerVinosBlancos()
+
+    obtenerVinosRosados()
+
+    obtenerCervezas()
+
+    obtenerCafeteria()
+    
 
 }
 
@@ -212,6 +227,70 @@ function obtenerPostres() {
     fetch(url)
     .then(respuesta => respuesta.json())
     .then( resultado => mostrarPostres(resultado))
+    .catch(error => console.log(error))
+}
+
+function obtenerVinosCaroyences() {
+    const url = 'https://comandera-e65c1-default-rtdb.firebaseio.com/vinosCaroyences.json'
+
+    fetch(url)
+    .then(respuesta => respuesta.json())
+    .then( resultado => mostrarVinosCaroyences(resultado))
+    .catch(error => console.log(error))
+}
+
+function obtenerVinosMalbec() {
+    const url = 'https://comandera-e65c1-default-rtdb.firebaseio.com/vinosMalbec.json'
+
+    fetch(url)
+    .then(respuesta => respuesta.json())
+    .then( resultado => mostrarVinosMalbec(resultado))
+    .catch(error => console.log(error))
+}
+
+function obtenerVinosBlancos() {
+    const url = 'https://comandera-e65c1-default-rtdb.firebaseio.com/vinosBlancos.json'
+
+    fetch(url)
+    .then(respuesta => respuesta.json())
+    .then( resultado => mostrarVinosBlancos(resultado))
+    .catch(error => console.log(error))
+}
+
+function obtenerVinosRosados() {
+    const url = 'https://comandera-e65c1-default-rtdb.firebaseio.com/vinosRosados.json'
+
+    fetch(url)
+    .then(respuesta => respuesta.json())
+    .then( resultado => mostrarVinosRosados(resultado))
+    .catch(error => console.log(error))
+}
+
+function obtenerCervezas() {
+    const url = 'https://comandera-e65c1-default-rtdb.firebaseio.com/cervezas.json'
+
+    fetch(url)
+    .then(respuesta => respuesta.json())
+    .then( resultado => mostrarCervezas(resultado))
+    .catch(error => console.log(error))
+}
+
+
+function obtenerSinAlchol() {
+    const url = 'https://comandera-e65c1-default-rtdb.firebaseio.com/sinAlcohol.json'
+
+    fetch(url)
+    .then(respuesta => respuesta.json())
+    .then( resultado => mostrarSinAlcohol(resultado))
+    .catch(error => console.log(error))
+}
+
+function obtenerCafeteria() {
+    const url = 'https://comandera-e65c1-default-rtdb.firebaseio.com/cafeteria.json'
+
+    fetch(url)
+    .then(respuesta => respuesta.json())
+    .then( resultado => mostrarCafeteria(resultado))
     .catch(error => console.log(error))
 }
 
@@ -706,7 +785,285 @@ function mostrarPostres(postres) {
     })
 }
 
-console.log(process.env.MENU_ENTRADAS)
+function mostrarVinosCaroyences(vinosCaroyences) {
+    const contenido = document.querySelector('#vinosCaroyences .contenido')
+
+    vinosCaroyences.forEach( vinosCaroyences => {
+        const row = document.createElement('DIV')
+        row.classList.add('row', 'py-3', 'border-top')
+
+        const nombre = document.createElement('DIV')
+        nombre.classList.add('col-md-5')
+        nombre.textContent = vinosCaroyences.nombre
+
+        const precio = document.createElement('DIV')
+        precio.classList.add('col-md-4', 'fw-bold')
+        precio.textContent = `$${vinosCaroyences.precio}`
+
+        const inputCantidad = document.createElement('INPUT') 
+        inputCantidad.type = 'number'
+        inputCantidad.min = 0
+        inputCantidad.value = 0
+        inputCantidad.id = `producto-${vinosCaroyences.id}`
+        inputCantidad.classList.add('form-control')
+
+        const agregar = document.createElement('DIV')
+        agregar.classList.add('col-md-3')
+        agregar.appendChild(inputCantidad)
+
+        inputCantidad.onchange = function () {
+            const cantidad = parseInt(inputCantidad.value)
+            agregarPlatillo({...vinosCaroyences, cantidad})
+        }
+
+
+        row.appendChild(nombre)
+        row.appendChild(precio)
+        row.appendChild(agregar)
+
+        contenido.appendChild(row)
+    })
+}
+
+function mostrarVinosMalbec(vinosMalbec) {
+    const contenido = document.querySelector('#vinosMalbec .contenido')
+
+    vinosMalbec.forEach( vinosMalbec => {
+        const row = document.createElement('DIV')
+        row.classList.add('row', 'py-3', 'border-top')
+
+        const nombre = document.createElement('DIV')
+        nombre.classList.add('col-md-5')
+        nombre.textContent = vinosMalbec.nombre
+
+        const precio = document.createElement('DIV')
+        precio.classList.add('col-md-4', 'fw-bold')
+        precio.textContent = `$${vinosMalbec.precio}`
+
+        const inputCantidad = document.createElement('INPUT') 
+        inputCantidad.type = 'number'
+        inputCantidad.min = 0
+        inputCantidad.value = 0
+        inputCantidad.id = `producto-${vinosMalbec.id}`
+        inputCantidad.classList.add('form-control')
+
+        const agregar = document.createElement('DIV')
+        agregar.classList.add('col-md-3')
+        agregar.appendChild(inputCantidad)
+
+        inputCantidad.onchange = function () {
+            const cantidad = parseInt(inputCantidad.value)
+            agregarPlatillo({...vinosMalbec, cantidad})
+        }
+
+
+        row.appendChild(nombre)
+        row.appendChild(precio)
+        row.appendChild(agregar)
+
+        contenido.appendChild(row)
+    })
+}
+
+function mostrarVinosBlancos(vinosBlancos) {
+    const contenido = document.querySelector('#vinosBlancos .contenido')
+
+    vinosBlancos.forEach( vinosBlancos => {
+        const row = document.createElement('DIV')
+        row.classList.add('row', 'py-3', 'border-top')
+
+        const nombre = document.createElement('DIV')
+        nombre.classList.add('col-md-5')
+        nombre.textContent = vinosBlancos.nombre
+
+        const precio = document.createElement('DIV')
+        precio.classList.add('col-md-4', 'fw-bold')
+        precio.textContent = `$${vinosBlancos.precio}`
+
+        const inputCantidad = document.createElement('INPUT') 
+        inputCantidad.type = 'number'
+        inputCantidad.min = 0
+        inputCantidad.value = 0
+        inputCantidad.id = `producto-${vinosBlancos.id}`
+        inputCantidad.classList.add('form-control')
+
+        const agregar = document.createElement('DIV')
+        agregar.classList.add('col-md-3')
+        agregar.appendChild(inputCantidad)
+
+        inputCantidad.onchange = function () {
+            const cantidad = parseInt(inputCantidad.value)
+            agregarPlatillo({...vinosBlancos, cantidad})
+        }
+
+
+        row.appendChild(nombre)
+        row.appendChild(precio)
+        row.appendChild(agregar)
+
+        contenido.appendChild(row)
+    })
+}
+
+function mostrarVinosRosados(vinosRosados) {
+    const contenido = document.querySelector('#vinosRosados .contenido')
+
+    vinosRosados.forEach( vinosRosados => {
+        const row = document.createElement('DIV')
+        row.classList.add('row', 'py-3', 'border-top')
+
+        const nombre = document.createElement('DIV')
+        nombre.classList.add('col-md-5')
+        nombre.textContent = vinosRosados.nombre
+
+        const precio = document.createElement('DIV')
+        precio.classList.add('col-md-4', 'fw-bold')
+        precio.textContent = `$${vinosRosados.precio}`
+
+        const inputCantidad = document.createElement('INPUT') 
+        inputCantidad.type = 'number'
+        inputCantidad.min = 0
+        inputCantidad.value = 0
+        inputCantidad.id = `producto-${vinosRosados.id}`
+        inputCantidad.classList.add('form-control')
+
+        const agregar = document.createElement('DIV')
+        agregar.classList.add('col-md-3')
+        agregar.appendChild(inputCantidad)
+
+        inputCantidad.onchange = function () {
+            const cantidad = parseInt(inputCantidad.value)
+            agregarPlatillo({...vinosRosados, cantidad})
+        }
+
+
+        row.appendChild(nombre)
+        row.appendChild(precio)
+        row.appendChild(agregar)
+
+        contenido.appendChild(row)
+    })
+} 
+
+function mostrarCervezas(cervezas) {
+    const contenido = document.querySelector('#cervezas .contenido')
+
+    cervezas.forEach( cervezas => {
+        const row = document.createElement('DIV')
+        row.classList.add('row', 'py-3', 'border-top')
+
+        const nombre = document.createElement('DIV')
+        nombre.classList.add('col-md-5')
+        nombre.textContent = cervezas.nombre
+
+        const precio = document.createElement('DIV')
+        precio.classList.add('col-md-4', 'fw-bold')
+        precio.textContent = `$${cervezas.precio}`
+
+        const inputCantidad = document.createElement('INPUT') 
+        inputCantidad.type = 'number'
+        inputCantidad.min = 0
+        inputCantidad.value = 0
+        inputCantidad.id = `producto-${cervezas.id}`
+        inputCantidad.classList.add('form-control')
+
+        const agregar = document.createElement('DIV')
+        agregar.classList.add('col-md-3')
+        agregar.appendChild(inputCantidad)
+
+        inputCantidad.onchange = function () {
+            const cantidad = parseInt(inputCantidad.value)
+            agregarPlatillo({...cervezas, cantidad})
+        }
+
+
+        row.appendChild(nombre)
+        row.appendChild(precio)
+        row.appendChild(agregar)
+
+        contenido.appendChild(row)
+    })
+}
+
+function mostrarSinAlcohol(sinAlcohol) {
+    const contenido = document.querySelector('#sinAlcohol .contenido')
+
+    sinAlcohol.forEach( sinAlcohol => {
+        const row = document.createElement('DIV')
+        row.classList.add('row', 'py-3', 'border-top')
+
+        const nombre = document.createElement('DIV')
+        nombre.classList.add('col-md-5')
+        nombre.textContent = sinAlcohol.nombre
+
+        const precio = document.createElement('DIV')
+        precio.classList.add('col-md-4', 'fw-bold')
+        precio.textContent = `$${sinAlcohol.precio}`
+
+        const inputCantidad = document.createElement('INPUT') 
+        inputCantidad.type = 'number'
+        inputCantidad.min = 0
+        inputCantidad.value = 0
+        inputCantidad.id = `producto-${sinAlcohol.id}`
+        inputCantidad.classList.add('form-control')
+
+        const agregar = document.createElement('DIV')
+        agregar.classList.add('col-md-3')
+        agregar.appendChild(inputCantidad)
+
+        inputCantidad.onchange = function () {
+            const cantidad = parseInt(inputCantidad.value)
+            agregarPlatillo({...sinAlcohol, cantidad})
+        }
+
+
+        row.appendChild(nombre)
+        row.appendChild(precio)
+        row.appendChild(agregar)
+
+        contenido.appendChild(row)
+    })
+}
+
+function mostrarCafeteria(cafeteria) {
+    const contenido = document.querySelector('#cafeteria .contenido')
+
+    cafeteria.forEach( cafeteria => {
+        const row = document.createElement('DIV')
+        row.classList.add('row', 'py-3', 'border-top')
+
+        const nombre = document.createElement('DIV')
+        nombre.classList.add('col-md-5')
+        nombre.textContent = cafeteria.nombre
+
+        const precio = document.createElement('DIV')
+        precio.classList.add('col-md-4', 'fw-bold')
+        precio.textContent = `$${cafeteria.precio}`
+
+        const inputCantidad = document.createElement('INPUT') 
+        inputCantidad.type = 'number'
+        inputCantidad.min = 0
+        inputCantidad.value = 0
+        inputCantidad.id = `producto-${cafeteria.id}`
+        inputCantidad.classList.add('form-control')
+
+        const agregar = document.createElement('DIV')
+        agregar.classList.add('col-md-3')
+        agregar.appendChild(inputCantidad)
+
+        inputCantidad.onchange = function () {
+            const cantidad = parseInt(inputCantidad.value)
+            agregarPlatillo({...cafeteria, cantidad})
+        }
+
+
+        row.appendChild(nombre)
+        row.appendChild(precio)
+        row.appendChild(agregar)
+
+        contenido.appendChild(row)
+    })
+}
 
 function agregarPlatillo(producto) {
     
