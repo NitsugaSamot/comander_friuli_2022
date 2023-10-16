@@ -9,6 +9,8 @@ let cliente = {
     ]
 }
 
+let DB
+
 const btnGuardarCliente = document.querySelector('#guardar-cliente')
 btnGuardarCliente.addEventListener('click', guardarCliente)
 
@@ -1334,6 +1336,16 @@ function calcularTotal() {
     const total = subtotal
 
     mostrarTotalHTML(subtotal, total)
+
+    const transaction = DB.transaction(['comandas'], 'readwrite')
+
+    const objectStore = transaction.objectStore('comandas')
+
+    objectStore.add(mostrarTotalHTML)
+
+    transaction.oncomplete = function() {
+        console.log('comanda guardada')
+    }
 }
 
 function mostrarTotalHTML(subtotal, total) {
@@ -1351,6 +1363,7 @@ function mostrarTotalHTML(subtotal, total) {
     formulario.appendChild(divTotales)
   
     console.log(divTotales)  
+
   }
 
       function imprimirTicket(mostrarTotalHTML) {
@@ -1382,3 +1395,47 @@ function mostrarTotalHTML(subtotal, total) {
 
 // json-server --watch db.json
 
+window.onload = () => {
+    formularioTotal()
+
+    crearDB()
+}
+
+function crearDB() {
+    const crearDB = window.indexedDB.open('comandas', 1)
+
+    //error
+    crearDB.onerror = function() {
+        console.log('Hubo un error')
+    }
+
+    //Si todo sale bien
+    crearDB.onsuccess = function() {
+        console.log('BD creada')
+
+        DB = crearDB.result
+
+        console.log(DB)
+    }
+
+    //Definir el schema 
+    crearDB.onupgradeneeded = function(e) {
+        const db = e.target.result
+
+        const objectStore = db.createObjectStore('comandas', {
+            keyPath: 'id',
+            autoIncrement: true
+        })
+
+        //Definir todas las columnas
+        objectStore.createIndex('mesa', 'mesa' , {unique: true})
+        objectStore.createIndex('mozo', 'mozo' , {unique: false})
+        objectStore.createIndex('fecha', 'fecha' , {unique: false})
+        objectStore.createIndex('hora', 'hora' , {unique: false})
+        objectStore.createIndex('comensales', 'comensales' , {unique: false})
+        objectStore.createIndex('pedido', 'pedido' , {unique: false})
+
+        console.log('DB creada y lista')
+    }
+        
+}

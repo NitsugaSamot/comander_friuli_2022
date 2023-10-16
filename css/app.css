@@ -1,5 +1,5 @@
 html {
-    /* font-size: 62.5%; */
+    font-size: 62.5%;
     box-sizing: border-box;
     color: tomato;
 }
@@ -52,8 +52,16 @@ html {
 
 .navegacion a{
     color: whitesmoke;
-    text-decoration: none
+    text-decoration: none;
+    font-size: 1.2rem;
 }
+
+.navegacion a:hover {
+    color: #110303;
+    transition: color 0.3s; /* Cambia 0.3s al tiempo de transición deseado */
+    font-size: 1.3rem;
+}
+
 
 /* .container-titulo{
     border-radius: 10%;
