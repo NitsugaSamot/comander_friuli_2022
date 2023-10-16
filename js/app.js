@@ -58,6 +58,15 @@ function guardarCliente() {
     const modalBootstrap = bootstrap.Modal.getInstance(modalFormulario)
     modalBootstrap.hide()
 
+
+    // Mostrar el menú de navegación
+    const navegacion = document.querySelector('.navegacion')
+    navegacion.classList.remove('d-none')
+
+    const header = document.querySelector('.header')
+    header.classList.remove('header')
+    header.classList.add('header-hide')
+
     //Mostrar secciones
     mostrarSecciones()
 
@@ -380,6 +389,10 @@ function mostrarParaCompartir(paraCompartir) {
 function mostrarPastas(pastas) {
     const contenido = document.querySelector('#pastas .contenido')
 
+    const title = document.createElement('H3')
+    // title.classList.add('')
+    title.textContent = 'Pastas'
+
     pastas.forEach( pastas => {
     const row = document.createElement('DIV')
     row.classList.add('row', 'py-3', 'border-top')
@@ -418,13 +431,15 @@ function mostrarPastas(pastas) {
       agregar.classList.add('col-md-3')
       agregar.appendChild(inputCantidad)
 
+      
       row.appendChild(nombre)
       row.appendChild(precio)
       row.appendChild(agregar)
       
-
+      
       contenido.appendChild(row)
     })
+    contenido.appendChild(title)
 }
 
 function mostrarSalsas(Salsas) {
@@ -1298,6 +1313,7 @@ function mensajePedidoVacio()  {
     contenido.appendChild(texto)
 }
 
+
 function formularioTotal(){
     const contenido = document.querySelector('#resumen .contenido')
     
@@ -1316,12 +1332,18 @@ function formularioTotal(){
     const botonCalcular = document.createElement('BUTTON')
     botonCalcular.classList.add('btnCalcular', 'btn-danger')
     botonCalcular.textContent = 'Calcular Total'
-    botonCalcular.onclick = calcularTotal
+    // botonCalcular.onclick = calcularTotal
+    botonCalcular.onclick = function () {
+        calcularTotal();
+        botonCalcular.disabled = true; // Deshabilita el botón después del clic
+    };
 
     divFormulario.appendChild(heading)
     formulario.appendChild(divFormulario)
     divFormulario.appendChild(botonCalcular)
     contenido.appendChild(formulario)
+
+
     
 }
 
@@ -1333,6 +1355,12 @@ function calcularTotal() {
         subtotal += articulo.cantidad * articulo.precio
     })
 
+        // Elimina cualquier instancia anterior del elemento que muestra el total
+        const totalAnterior = document.querySelector('.total-pagar');
+        if (totalAnterior) {
+            totalAnterior.remove();
+        }
+
     const total = subtotal
 
     mostrarTotalHTML(subtotal, total)
@@ -1341,7 +1369,7 @@ function calcularTotal() {
 
     const objectStore = transaction.objectStore('comandas')
 
-    objectStore.add(mostrarTotalHTML)
+    // objectStore.add(mostrarTotalHTML)
 
     transaction.oncomplete = function() {
         console.log('comanda guardada')
@@ -1362,8 +1390,6 @@ function mostrarTotalHTML(subtotal, total) {
     const formulario = document.querySelector('.formulario')
     formulario.appendChild(divTotales)
   
-    console.log(divTotales)  
-
   }
 
       function imprimirTicket(mostrarTotalHTML) {

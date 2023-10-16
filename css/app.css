@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+    font-size: 6.12.5%;
     box-sizing: border-box;
     color: tomato;
 }
@@ -7,12 +7,35 @@ html {
     box-sizing: inherit;
 }
 
-.contenedor-navegacion{
-    height: 6rem;
+h2{
+    font-size: 1.5rem;
+    padding: 2rem;
+
+}
+
+.formulario{
+    width: 100%;
+    
+}
+
+.contenido{
+    margin: 0 auto;
+    background-color: #880303;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    color: rgb(11, 7, 2);
+}
+
+.btn
+.contenedor-nav{
+    margin-bottom: 6rem;
+    
 }
 
 #resumen{
     width: 100%;
+    /* margin: 0 auto; */
+    font-size: 0.9rem;
 }
 .grupo{
     display: grid;
@@ -26,10 +49,16 @@ html {
     background-repeat: no-repeat;
     width: 100%;
     height: 30rem;
+    margin-top: 5rem;
+    text-align: center;
 }
 
 .header h1{
     color:rgb(43, 32, 19);
+}
+
+.header-hide{
+    display: none;
 }
 
 .cabezera{
@@ -40,26 +69,43 @@ html {
 
 .navegacion {    
     display: flex;
-    gap: 2rem;
-    justify-content: center;
     flex-wrap: wrap;
-    background-color: #921414;
-    padding: 2rem;
+    justify-content: center;
+    gap: 0.4rem;
+    /* background-color: #921414; */
+    padding: 0.9rem;
     list-style: none;
-  
+    background-color: rgba(255, 0, 0, 0.1);
+
+    
 }
 
 
 .navegacion a{
     color: whitesmoke;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
+     /* margin-top: 120px; */
 }
 
 .navegacion a:hover {
     color: #110303;
     transition: color 0.3s; /* Cambia 0.3s al tiempo de transición deseado */
-    font-size: 1.3rem;
+    font-size: 0.73rem;
+}
+
+.menus{
+    margin-top: 3rem;
+}
+
+#entradas,
+#pastas{
+    margin-top: 120px;
+}
+
+.resumen-link{
+    background-color: rgba(170, 4, 4, 0.8);
+    padding: 0.4rem;
 }
 
 
@@ -67,16 +113,25 @@ html {
     border-radius: 10%;
     
 } */
+
+.title-container{
+    margin-top: 2rem;
+}
+
 .titulo{
-    font-size: 1.6rem;
+    font-size: 1.1.6rem;
     background-color: rgba(255, 255, 255, 0.664);
 }
+
+
 
 .container{
     height: 100%;
     width:95%;
     max-width: 120rem;
     margin: 0 auto;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 .container-form{
@@ -107,7 +162,7 @@ html {
     }
 
     .titulo{
-        font-size: 1.2rem;     
+        font-size: 1.1.2rem;     
         padding: 2rem;
     }
 
@@ -132,7 +187,7 @@ html {
     }
 
     .titulo{
-        font-size: 1.6rem;     
+        font-size: 1.1.6rem;     
         padding: 3.5rem;
     }
 
@@ -176,11 +231,7 @@ html {
 } */
 
 
-
-.contenido{
-    background-color: #882e2e;
-    padding: 5rem;
-}
+/* #resumen */
 
 .resumenDefinitivo{
     display: flex;
@@ -192,9 +243,12 @@ html {
     padding: 0.1rem;
     border-radius: 3%;
     text-align: center;
+    width: 100%;
+    
+    font-size: 0.9rem;
 }
 
-
+/* total */
 
 .btnEliminar {
     width: 6rem;
@@ -206,7 +260,13 @@ html {
     cursor: pointer;
     color: antiquewhite;
     cursor: col-resize;
+    font-size: 1.1.3rem;
+    margin-top: 1rem;
 } 
+
+.resumen{
+    width: 100%;
+}
 
 .resumenFinal{
     display: grid;
@@ -271,7 +331,7 @@ html {
 @media (min-width: 260px) {
 
     .navegacion {
-        font-size: 0.5rem;
+        font-size: 0.1.5rem;
     }
     
     .infoMesa {
@@ -297,7 +357,7 @@ html {
 @media (min-width: 460px) {
 
     .navegacion {
-        font-size: 0.8rem;
+        font-size: 0.1.8rem;
     }
     .infoMesa {
     display: block;
